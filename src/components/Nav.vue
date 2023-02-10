@@ -1,0 +1,22 @@
+<template>
+  <nav class="nav">
+    <a class="nav__logo"><img src="logo.png" alt="logo"></a>
+    <a class="nav__item">Reciente</a>
+    <a class="nav__item">Destacados</a>
+    <a class="nav__item">Descubre</a>
+    <a class="nav__item">Creators</a>
+    <a class="nav__item">Favoritos</a>
+    <a class="nav__item">Sobre Nosotros</a>
+    <div class="nav__search">
+        <input type="text" placeholder="Buscar por serie o autor">
+    </div>
+  </nav>
+</template>
+
+<script setup>
+
+</script>
+
+<style >
+
+</style>
