@@ -6,17 +6,15 @@
     <a class="nav__item">Descubre</a>
     <a class="nav__item">Creators</a>
     <a class="nav__item">Favoritos</a>
-    <a class="nav__item">Sobre Nosotros</a>
+    <a class="nav__item">Sobre</a>
     <div class="nav__search">
-        <input type="text" placeholder="Buscar por serie o autor">
+        <input class="nav__search-input" type="text" placeholder="Buscar por serie o autor">
+        <!-- <svg class="nav__search-icon">
+            <use xlink:href="search.svg"></use>
+        </svg> -->
     </div>
   </nav>
 </template>
 
 <script setup>
-
 </script>
-
-<style >
-
-</style>

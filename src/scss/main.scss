@@ -1,2 +1,9 @@
-body{
-}
+@import "custom/variables";
+
+@import "core/base";
+@import "core/typography";
+@import "core/utilities";
+
+@import "animations/slideToLeft";
+
+@import "layout/nav";

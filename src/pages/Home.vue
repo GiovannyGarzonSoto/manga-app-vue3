@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import Nav from '../components/Nav.vue'
+import Nav from '../layout/Nav.vue'
 
 name: 'Home'
 
