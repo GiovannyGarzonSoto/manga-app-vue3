@@ -8,7 +8,7 @@
     <a class="nav__item">Favoritos</a>
     <a class="nav__item">Sobre</a>
     <div class="nav__search">
-        <input class="nav__search-input" type="text" placeholder="Buscar por serie o autor">
+        <input class="nav__search-input" maxlength="24" type="text" placeholder="Buscar por serie o autor">
         <!-- <svg class="nav__search-icon">
             <use xlink:href="search.svg"></use>
         </svg> -->
@@ -17,4 +17,5 @@
 </template>
 
 <script setup>
+name: 'Nav'
 </script>
