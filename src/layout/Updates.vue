@@ -226,17 +226,6 @@
           <span class="title__chapter">Capitulo 80: Es ahora!</span>
         </div>
       </div>
-      <div class="title">
-        <div class="title__image">
-          <span class="title__name">8Kaijuu</span>
-          <span class="title__author">Matsumoto Naoya</span>
-        </div>
-        <div class="title__info">
-          <span class="title__number">#80</span>
-          <span class="title__premiere">Hoy</span>
-          <span class="title__chapter">Capitulo 80: Es ahora!</span>
-        </div>
-      </div>
     </section>
   </div>
 </template>

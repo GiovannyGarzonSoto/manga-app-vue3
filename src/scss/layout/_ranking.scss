@@ -1,0 +1,19 @@
+.container{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 0 0 1.6rem;
+    background-color: #0D0D0D;
+
+}
+
+.social-media{
+    height: 16rem;
+    background-color:   yellowgreen;
+}
+
+.ranking{
+    height: 100%;
+    background-color: violet;
+}
