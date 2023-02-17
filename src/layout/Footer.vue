@@ -1,17 +1,9 @@
 <template>
     <div class="footer">
-        FOOTER
+        <img class="footer__logo" src="logo.png" alt="logo">
     </div>
 </template>
 
 <script setup>
 name: 'Footer'
 </script>
-
-<style>
-.footer{
-    height: 12rem;
-    width: 100%;
-    background-color: steelblue;
-}
-</style>

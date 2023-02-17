@@ -1,6 +1,6 @@
 <template>
     <Nav/>
-    <Hero/>
+    <!-- <Hero/> -->
     <Updates/>
     <Footer/>
 </template>
