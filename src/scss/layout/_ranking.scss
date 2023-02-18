@@ -1,16 +1,62 @@
 .container{
-    flex-grow: 1;
+    flex-grow: .7;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     padding: 0 0 0 1.6rem;
     background-color: #0D0D0D;
-
+    gap: .8rem;
 }
 
 .social-media{
-    height: 16rem;
-    background-color:   yellowgreen;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: .8rem;
+     
+    &__item{
+        border-radius: 8px 0 0 8px;
+    }
+
+    &__item:nth-child(1){
+        height: 6rem;
+        background-color:  #333a53; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.1rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: var(--color-white);
+    }
+
+    &__discord-box{
+        padding: 1.6rem 2rem;
+        // flex-grow: 1;
+
+        &:hover{
+            background-color: #7289DA;
+        }
+    }
+
+    &__facebook-box{
+        padding: 1.6rem 2rem;
+        // flex-grow: 1;
+
+        &:hover{
+            // transform: rotate3d(180deg, 0, 0, 0);
+            background-color: #69688F;
+        }
+    }
+    
+    &__item:nth-child(2){
+        height: 8rem;
+        width: 100%;
+        background-image: url('creators-banner.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 .ranking{
