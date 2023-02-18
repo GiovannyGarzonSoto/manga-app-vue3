@@ -2,7 +2,7 @@
   <div class="updates">
     <header class="header">
       <h3 class="header__title">Ponte al día</h3>
-      <a class="header__tag">Todo lo Reciente &#x276D;</a>
+      <a class="header__tag tag">Todo lo Reciente &#x276D;</a>
     </header>
 
     <section class="titles">
