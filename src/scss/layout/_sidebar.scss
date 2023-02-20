@@ -40,6 +40,21 @@
         &:hover{
             background-color: #7289DA;
             border-radius: 4px;
+            position: relative;
+            color: transparent;
+            
+            &::after{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-image: url('discord.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                transform: scale(.8);
+            }
         }
     }
 
@@ -50,8 +65,22 @@
 
         &:hover{
             background-color: #69688F;
-            // transform: rotate3d(180deg, 0, 0, 0);
             border-radius: 4px;
+            position: relative;
+            color: transparent;
+
+            &::after{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-image: url('facebook.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                transform: scale(.65);
+            }
         }
     }
     
@@ -61,6 +90,7 @@
         background-image: url('creators-banner.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
@@ -110,16 +140,16 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+            gap: .4rem;
         }
 
         &__item{
             width: 100%;
             height: 100%;
-            margin-left: 1.6rem;
-            margin-top: 1.6rem;
+            transform: scale(.9);
             display: flex;
             justify-content: flex-start;
-            gap: .8rem;
+            gap: 2.4rem;
             background-repeat: no-repeat;
             background-size: contain;
             position: relative;
@@ -138,7 +168,7 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    transform: translate(80%,-50%);
+                    transform: translate(98%,-50%);
                     background-color: var(--color-black);
                     background-repeat: no-repeat;
                     background-size: contain;
@@ -187,7 +217,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                transform: translate(64%,-50%);
+                transform: translate(80%,-50%);
                 background-color: var(--color-black);
             }
         }
