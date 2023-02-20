@@ -115,13 +115,59 @@
         &__item{
             width: 100%;
             height: 100%;
-            padding: .8rem;
+            margin-left: 1.6rem;
+            margin-top: 1.6rem;
             display: flex;
             justify-content: flex-start;
             gap: .8rem;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
 
             &:hover{
                 background-color: #690F13
+            }
+
+            &:nth-child(1),&:nth-child(2),
+            &:nth-child(3) {
+                &::after{
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    content: '';
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(80%,-50%);
+                    background-color: var(--color-black);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+            }
+
+            &:nth-child(1) {
+                background-image: url('dandadan.jpg');
+                
+                &::after{
+                    background-image: url('first.png');
+                }
+            }
+    
+            &:nth-child(2) {
+                background-image: url('undead-unluck.jpeg');
+
+                &::after{
+                    background-image: url('second.png');
+                }
+            }
+    
+            &:nth-child(3) {
+                background-image: url('sakamoto-days.jpeg');
+
+                &::after{
+                    background-image: url('third.png');
+                }
             }
         }
 
@@ -129,40 +175,20 @@
             height: 100%;
             width: 8rem;
             padding: 1.2rem;
-            background-image: url('dandadan.jpg');
             background-repeat: no-repeat;
             background-size: contain;
             position: relative;
 
-            &:nth-child(1) {
-                // background-image: url('dandadan.jpg');
-            }
-
-            &:nth-child(2) {
-                background-image: url('undead-unluck.jpg');
-            }
-
-            &:nth-child(3) {
-                background-image: url('sakamoto-days.jpg');
-            }
-
-            &::after{
-                width: 2.4rem;
-                height: 2.4rem;
+            &::before{
+                width: 2.8rem;
+                height: 2.8rem;
                 content: '';
                 border-radius: 50%;
                 position: absolute;
-                top: -1.6rem;
-                left: 1.8rem;
+                top: 0;
+                left: 0;
+                transform: translate(64%,-50%);
                 background-color: var(--color-black);
-                background-image: url('first.png');
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-
-                &:nth-child(1){
-                    
-                }
             }
         }
 
