@@ -1,13 +1,13 @@
 <template>
     <div class="main">
         <Updates/>
-        <Ranking/>
+        <Sidebar/>
     </div>
 </template>
 
 <script setup>
 import Updates from '../layout/Updates.vue'
-import Ranking from './Ranking.vue';
+import Sidebar from './Sidebar.vue';
 
 name: 'Main'
 </script>

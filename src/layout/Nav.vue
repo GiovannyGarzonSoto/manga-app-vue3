@@ -1,6 +1,6 @@
 <template>
   <nav class="nav">
-    <a class="nav__logo"><img src="logo.png" alt="logo"></a>
+    <a class="nav__logo"><img src="logo-full.png" alt="logo"></a>
     <a class="nav__item">Reciente</a>
     <a class="nav__item">Destacados</a>
     <a class="nav__item">Descubre</a>
