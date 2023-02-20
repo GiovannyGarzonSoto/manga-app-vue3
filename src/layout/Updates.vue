@@ -232,4 +232,5 @@
 
 <script setup>
 name: 'Updates'
+
 </script>

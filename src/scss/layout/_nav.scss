@@ -1,5 +1,5 @@
 .nav{
-    border-top: 5px solid #a00000;
+    border-top: var(--brd-top-size) solid #a00000;
     background-color: rgba(0, 0, 0, 0.179);    
     padding: .8rem 2rem;
     display: flex;
@@ -24,10 +24,21 @@
         letter-spacing: 2px;
         text-transform: uppercase;
         color: #adadad;
+        position: relative;
 
         &:hover{
             color: var(--color-yellow);
             transform: translateY(1px);
+
+            &::before{
+                content: '';
+                width: 100%;
+                height: var(--brd-top-size);
+                background-color:  var(--color-yellow);
+                position: absolute;
+                top: -3.9rem;
+                left: 0;
+            }
         }
     }
 
