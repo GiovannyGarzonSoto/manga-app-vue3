@@ -11,6 +11,11 @@ const routes = [
         name: 'admin',
         component: () => import(/* webpackChunkName: "Admin" */ '../pages/Admin.vue')
     },
+    { 
+        path: '/manga-list', 
+        name: 'manga-list',
+        component: () => import(/* webpackChunkName: "MangaList" */ '../pages/MangaList.vue')
+    },
 ]
 
 const router = createRouter({

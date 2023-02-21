@@ -22,7 +22,7 @@
         padding: 1.6rem 2rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-        grid-gap: 1.6rem;
+        gap: 1.6rem;
 
         .title {
             height: 24.5rem;
