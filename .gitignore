@@ -1,3 +1,5 @@
+/dist/uploads/*
+
 # Logs
 logs
 *.log
