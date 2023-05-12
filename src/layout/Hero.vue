@@ -1,18 +1,39 @@
 <template>
   <div class="hero-container">
     <picture class="hero">
-      <div class="hero__item"></div>
-      <div class="hero__item"></div>
-      <div class="hero__item"></div>
+      <template v-show="isPostersReady" v-for="(poster, i) in posters" :key="poster.id" >
+        <img :src="poster.image" class="hero__item">
+      </template>
     </picture>
-    <!-- <div class="button">
-      <input type="checkbox" id="slider">
-      <label for="slider" title="slider action" class="slider-action">
-      </label>
-    </div> -->
   </div>
 </template>
 
-<script setup>
-name: 'Hero'
+<script>
+import axios from '@axios'
+import { onMounted, ref } from 'vue'
+
+export default {
+  name: 'hero',
+  setup() {
+    const posters = ref([])
+    const isPostersReady = ref(false)
+    const getPosters = async() => {
+      const {data} = await axios.get('/poster')
+      posters.value = data.data
+    }
+
+    onMounted(async() => {
+      await getPosters()
+      isPostersReady.value = true
+      console.log(posters.value)
+    })
+
+    return {
+      posters,
+      isPostersReady
+    }
+  }
+}
 </script>
+
+<style src="../scss/layout/_hero.scss"></style>
