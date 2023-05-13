@@ -25,7 +25,6 @@ export default {
     onMounted(async() => {
       await getPosters()
       isPostersReady.value = true
-      console.log(posters.value)
     })
 
     return {
