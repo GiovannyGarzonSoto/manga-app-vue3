@@ -16,7 +16,7 @@
     }
 
     .titles{
-        // height: 30vh;
+        height: 100%;
         width: 100%;
         padding: 1.6rem 2rem;
         display: grid;
@@ -27,8 +27,10 @@
             display: flex;
             flex-direction: column;
             max-width: 16rem;
+            justify-content: flex-start;
 
             &__image-box{
+                flex-grow: 1;
                 position: relative;
                 display: flex;
                 flex-direction: column;
@@ -62,10 +64,10 @@
                         background: linear-gradient(to top, rgb(5, 5, 5) 0%, rgba(0, 0, 0, 0.295) 80%, rgba(0, 213, 255, 0) 100%);
                     }
                 }
+            }
 
-                // &:hover > * {
-                //     opacity: 1;
-                // }
+            &__image{
+                height: 100%;       
             }
 
             &__name{
@@ -108,6 +110,11 @@
                 }
             }
 
+            &__info-hover{
+                border-top: 1px solid #a00000c5;
+                background: linear-gradient(to bottom, #01010100 2%, #a00000c5 100%);
+            }
+
             &__number{
                 font-weight: 700;
                 font-size: 1.4rem;
@@ -127,6 +134,9 @@
             &__chapter{
                 color: #75706A;
                 font-weight: 500;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
             }
         }
     }
