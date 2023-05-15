@@ -18,6 +18,114 @@
           <span class="title__chapter">Capitulo {{ chapter.number }}: {{ chapter.title }}</span>
         </div>
       </div>
+      <div class="title" v-for="(chapter, i) in chapters" :key="chapter.id">
+        <div class="title__image-box" ref="titleImage">
+          <img class="title__image" :src="`${chapter.manga.images.cover}`" alt="">
+          <span class="title__name">{{ chapter.title }}</span>
+          <span class="title__author">{{ chapter.author.name }}</span>
+        </div>
+        <div class="title__info">
+          <span class="title__number">#{{ chapter.number }}</span>
+          <span class="title__premiere">Hoy</span>
+          <span class="title__chapter">Capitulo {{ chapter.number }}: {{ chapter.title }}</span>
+        </div>
+      </div>
+      <div class="title" v-for="(chapter, i) in chapters" :key="chapter.id">
+        <div class="title__image-box" ref="titleImage">
+          <img class="title__image" :src="`${chapter.manga.images.cover}`" alt="">
+          <span class="title__name">{{ chapter.title }}</span>
+          <span class="title__author">{{ chapter.author.name }}</span>
+        </div>
+        <div class="title__info">
+          <span class="title__number">#{{ chapter.number }}</span>
+          <span class="title__premiere">Hoy</span>
+          <span class="title__chapter">Capitulo {{ chapter.number }}: {{ chapter.title }}</span>
+        </div>
+      </div>
+      <div class="title" v-for="(chapter, i) in chapters" :key="chapter.id">
+        <div class="title__image-box" ref="titleImage">
+          <img class="title__image" :src="`${chapter.manga.images.cover}`" alt="">
+          <span class="title__name">{{ chapter.title }}</span>
+          <span class="title__author">{{ chapter.author.name }}</span>
+        </div>
+        <div class="title__info">
+          <span class="title__number">#{{ chapter.number }}</span>
+          <span class="title__premiere">Hoy</span>
+          <span class="title__chapter">Capitulo {{ chapter.number }}: {{ chapter.title }}</span>
+        </div>
+      </div>
+      <div class="title" v-for="(chapter, i) in chapters" :key="chapter.id">
+        <div class="title__image-box" ref="titleImage">
+          <img class="title__image" :src="`${chapter.manga.images.cover}`" alt="">
+          <span class="title__name">{{ chapter.title }}</span>
+          <span class="title__author">{{ chapter.author.name }}</span>
+        </div>
+        <div class="title__info">
+          <span class="title__number">#{{ chapter.number }}</span>
+          <span class="title__premiere">Hoy</span>
+          <span class="title__chapter">Capitulo {{ chapter.number }}: {{ chapter.title }}</span>
+        </div>
+      </div>
+      <div class="title" v-for="(chapter, i) in chapters" :key="chapter.id">
+        <div class="title__image-box" ref="titleImage">
+          <img class="title__image" :src="`${chapter.manga.images.cover}`" alt="">
+          <span class="title__name">{{ chapter.title }}</span>
+          <span class="title__author">{{ chapter.author.name }}</span>
+        </div>
+        <div class="title__info">
+          <span class="title__number">#{{ chapter.number }}</span>
+          <span class="title__premiere">Hoy</span>
+          <span class="title__chapter">Capitulo {{ chapter.number }}: {{ chapter.title }}</span>
+        </div>
+      </div>
+      <div class="title" v-for="(chapter, i) in chapters" :key="chapter.id">
+        <div class="title__image-box" ref="titleImage">
+          <img class="title__image" :src="`${chapter.manga.images.cover}`" alt="">
+          <span class="title__name">{{ chapter.title }}</span>
+          <span class="title__author">{{ chapter.author.name }}</span>
+        </div>
+        <div class="title__info">
+          <span class="title__number">#{{ chapter.number }}</span>
+          <span class="title__premiere">Hoy</span>
+          <span class="title__chapter">Capitulo {{ chapter.number }}: {{ chapter.title }}</span>
+        </div>
+      </div>
+      <div class="title" v-for="(chapter, i) in chapters" :key="chapter.id">
+        <div class="title__image-box" ref="titleImage">
+          <img class="title__image" :src="`${chapter.manga.images.cover}`" alt="">
+          <span class="title__name">{{ chapter.title }}</span>
+          <span class="title__author">{{ chapter.author.name }}</span>
+        </div>
+        <div class="title__info">
+          <span class="title__number">#{{ chapter.number }}</span>
+          <span class="title__premiere">Hoy</span>
+          <span class="title__chapter">Capitulo {{ chapter.number }}: {{ chapter.title }}</span>
+        </div>
+      </div>
+      <div class="title" v-for="(chapter, i) in chapters" :key="chapter.id">
+        <div class="title__image-box" ref="titleImage">
+          <img class="title__image" :src="`${chapter.manga.images.cover}`" alt="">
+          <span class="title__name">{{ chapter.title }}</span>
+          <span class="title__author">{{ chapter.author.name }}</span>
+        </div>
+        <div class="title__info">
+          <span class="title__number">#{{ chapter.number }}</span>
+          <span class="title__premiere">Hoy</span>
+          <span class="title__chapter">Capitulo {{ chapter.number }}: {{ chapter.title }}</span>
+        </div>
+      </div>
+      <div class="title" v-for="(chapter, i) in chapters" :key="chapter.id">
+        <div class="title__image-box" ref="titleImage">
+          <img class="title__image" :src="`${chapter.manga.images.cover}`" alt="">
+          <span class="title__name">{{ chapter.title }}</span>
+          <span class="title__author">{{ chapter.author.name }}</span>
+        </div>
+        <div class="title__info">
+          <span class="title__number">#{{ chapter.number }}</span>
+          <span class="title__premiere">Hoy</span>
+          <span class="title__chapter">Capitulo {{ chapter.number }}: {{ chapter.title }}</span>
+        </div>
+      </div>
     </section>
   </div>
 </template>

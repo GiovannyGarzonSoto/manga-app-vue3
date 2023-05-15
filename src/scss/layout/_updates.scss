@@ -16,26 +16,24 @@
     }
 
     .titles{
-        height: 100%;
+        // height: 30vh;
         width: 100%;
-        background-color: #0D0D0D;
         padding: 1.6rem 2rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
         gap: 1.6rem;
 
         .title {
-            height: 24.5rem;
             display: flex;
             flex-direction: column;
+            max-width: 16rem;
 
             &__image-box{
                 position: relative;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
-                max-width: 16rem;
-                max-height: 24rem;
+                background: linear-gradient(to top, rgb(5, 5, 5) 0%, rgba(0, 0, 0, 0.295) 80%, rgba(0, 213, 255, 0) 100%);
 
                 &:hover{
                     &::after{
@@ -45,7 +43,7 @@
                         position: absolute;
                         top: 0;
                         left: 0;
-                        background: linear-gradient(to top,#5d0914cc 0%, #b0091428 40%,#b009140c 100%);
+                        background: linear-gradient(to top,#0e0101 0%, #b009145a 40%,#db0f190c 100%);
                         z-index: 1;
                     }
                 }
@@ -58,33 +56,33 @@
                     top: 0;
                     left: 0;
                     background: linear-gradient(to top, rgb(5, 5, 5) 0%, rgba(0, 0, 0, 0.295) 40%, rgba(0, 213, 255, 0) 100%);
-                    z-index: -1;
+                    z-index: 1;
                     
                     &:hover{
                         background: linear-gradient(to top, rgb(5, 5, 5) 0%, rgba(0, 0, 0, 0.295) 80%, rgba(0, 213, 255, 0) 100%);
                     }
                 }
 
-                &:hover > * {
-                    opacity: 1;
-                }
+                // &:hover > * {
+                //     opacity: 1;
+                // }
             }
 
             &__name{
                 color: white;
                 font-size: 1.2rem;
-                bottom: 16px;
+                bottom: 24px;
             }
 
             &__author{
                 color: #75706A;
+                bottom: 8px;
             }
 
             &__name,&__author{
                 position:absolute;
                 left: 8px;
                 z-index: 2;
-                opacity: 0;
                 &:hover{
                     opacity: 1;
                 }
