@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav class="nav" ref="banner" :class="{ 'animated-banner': showBanner }">
     <a class="nav__logo"><img src="../../public/logo-full.png" alt="logo"></a>
     <a class="nav__item">Reciente</a>
     <a class="nav__item">Destacados</a>
@@ -13,6 +13,35 @@
   </nav>
 </template>
 
-<script setup>
-name: 'Nav'
+<script>
+import { onMounted, ref } from 'vue'
+import { useRouter } from 'vue-router'
+
+export default {
+  name: 'Nav',
+  setup() {
+    const router = useRouter()
+    const banner = ref(null)
+    const showBanner = ref(false)
+
+    const isMainScreen = () => {
+      if(router.currentRoute.value.path === '/')   {
+        showBanner.value = true
+      }else{
+        banner.value.style.background = "rgba(0, 0, 0, 1)"
+      }
+    } 
+
+    onMounted(() => {
+      isMainScreen()
+    })
+
+    return {
+      banner,
+      showBanner
+    }
+  }
+}
 </script>
+
+<style src="../scss/layout/_nav.scss"></style>

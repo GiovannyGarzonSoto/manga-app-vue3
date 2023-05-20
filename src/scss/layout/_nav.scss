@@ -1,6 +1,6 @@
 .nav{
     border-top: var(--brd-top-size) solid #a00000;
-    background-color: rgba(0, 0, 0, 0.179);    
+    background: rgba(0, 0, 0, 0.179);    
     padding: .8rem 2rem;
     display: flex;
     position: relative;
@@ -76,7 +76,7 @@
     }
 }
 
-.nav::before{
+.animated-banner::before{
     content: '';
     position: absolute;
     width: auto;
